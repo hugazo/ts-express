@@ -1,10 +1,11 @@
 {
   "name": "express-ts",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Simple Express Typescript Boilerplate",
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon index.ts",
+    "build": "tsc --project ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -8,7 +8,9 @@ const app = express();
 
 const { PORT } = process.env;
 
-app.get('/', (_req: Request, res: Response) => res.send('App working!'));
+import baseRouter from './router';
+
+app.use(baseRouter);
 
 app.listen(PORT, () => {
   console.log(`App listening in port ${PORT}`);
