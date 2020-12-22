@@ -1,5 +1,7 @@
-dist/
 
+# Project Empty Folders
+build/*
+!build/.gitkeep
 
 
 ################### COMMON GITIGNORE SETUP ###################
