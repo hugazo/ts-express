@@ -1,19 +1,22 @@
 // Import dotenv config
 import dotenv from 'dotenv';
-dotenv.config();
 
 // Generate express app
 import express from 'express';
-const app = express();
 
 // Middleware Mounting
 import loggerMiddleware from './middleware/logger';
-app.use(loggerMiddleware);
 
 import baseRouter from './router';
+
+dotenv.config();
+const app = express();
+app.use(loggerMiddleware);
 app.use(baseRouter);
 
 const { PORT } = process.env;
 app.listen(PORT, () => {
-  console.log(`App listening in port ${PORT}`);
+  const port: string = PORT || '';
+  // eslint-disable-next-line no-console
+  console.log(`App listening in port ${port}`);
 });

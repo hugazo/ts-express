@@ -10,6 +10,6 @@ router.get('/', (_req, res) => {
   } catch (error) {
     res.status(403);
   }
-})
+});
 
 export default router;
