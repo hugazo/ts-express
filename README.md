@@ -12,3 +12,9 @@ This is a simple express api. This readme file should be growing with each itera
 ## Known Issues
 
 - Atom needs eslint plugin config to lint the ts files [More Info Here](https://github.com/AtomLinter/linter-eslint/issues/1293)
+
+
+## Roadmap
+
+- Add params to docker build to use node specified in .nvmrc
+- Add git hooks to lint before commit
