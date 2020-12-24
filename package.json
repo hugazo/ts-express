@@ -5,7 +5,10 @@
   "main": "index.ts",
   "scripts": {
     "dev": "nodemon index.ts",
+    "lint": "eslint .",
     "build": "tsc --project ./",
+    "image:local": "docker build -t node-api:latest .",
+    "image:local:run": "docker run -d -p 3000:3000 node-api:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
