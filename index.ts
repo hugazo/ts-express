@@ -11,10 +11,13 @@ import baseRouter from './router';
 
 dotenv.config();
 const app = express();
+app.use(express.json());
+
 app.use(loggerMiddleware);
 app.use(baseRouter);
 
 const { PORT } = process.env;
+
 app.listen(PORT, () => {
   const port: string = PORT || '';
   // eslint-disable-next-line no-console
