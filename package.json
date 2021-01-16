@@ -4,7 +4,7 @@
   "description": "Simple Express Typescript Boilerplate",
   "main": "index.ts",
   "scripts": {
-    "dev": "nodemon index.ts",
+    "dev": "tsc --project ./ && nodemon index.ts",
     "lint": "eslint .",
     "build": "tsc --project ./",
     "image:local": "docker build -t node-api:latest .",
