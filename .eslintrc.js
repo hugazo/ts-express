@@ -12,6 +12,10 @@ module.exports = {
     'import/no-unresolved': 'error',
     'import/first': 0,
     'no-console': 0,
+    '@typescript-eslint/no-misused-promises': [
+      'error',
+      { checksVoidReturn: false },
+    ],
   },
   plugins: ['import'],
   settings: {
