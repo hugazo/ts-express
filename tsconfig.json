@@ -5,6 +5,16 @@
     "rootDir": "./",
     "outDir": "./build",
     "esModuleInterop": true,
-    "strict": true
-  }
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["controllers/*"],
+      "@middleware/*": ["middleware/*"],
+      "@models/*": ["models/*"],
+      "@router/*": ["router/*"],
+      "@tests/*": ["tests/*"],
+    }
+  },
+  "moduleResolution": "node",
+  
 }
