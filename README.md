@@ -8,6 +8,19 @@ This is a simple express api. This readme file should be growing with each itera
 - Typescript Compliant
 - Added airbnb-eslint support for ts files
 - Docker Image Compose
+- MongoDB database
+
+## Setup
+
+```env
+# .env
+NODE_ENV=development # Unused for now
+PORT= # API Port
+DB_USER= # MongoDB Username
+DB_PASSWORD= # MongoDB Password
+DB_SERVER= # MongoDB Server
+DB_NAME= # MongoDB Database Name
+```
 
 ## Known Issues
 
