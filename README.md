@@ -9,6 +9,7 @@ This is a simple express api. This readme file should be growing with each itera
 - Added airbnb-eslint support for ts files
 - Docker Image Compose
 - MongoDB database
+- Module Aliases
 
 ## Setup
 
