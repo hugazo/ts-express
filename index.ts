@@ -15,6 +15,8 @@ import baseRouter from './router';
 // Server Declaration
 dotenv.config();
 const app = express();
+app.use(express.json());
+
 app.use(loggerMiddleware);
 app.use(baseRouter);
 
