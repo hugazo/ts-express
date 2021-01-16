@@ -15,8 +15,10 @@
   "author": "Hugo Morales <hugo@42devs.cl>",
   "license": "ISC",
   "dependencies": {
+    "@types/mongoose": "^5.10.3",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.12"
   },
   "devDependencies": {
     "@types/express": "^4.17.9",
