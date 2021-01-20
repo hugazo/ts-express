@@ -6,6 +6,7 @@
     "outDir": "./build",
     "esModuleInterop": true,
     "strict": true,
+    "assumeChangesOnlyAffectDirectDependencies": true,
     "baseUrl": ".",
     "paths": {
       "@controllers/*": ["controllers/*"],
