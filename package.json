@@ -6,18 +6,19 @@
   "scripts": {
     "dev": "nodemon index.ts",
     "lint": "eslint .",
-    "build": "tsc --project ./",
+    "build": "tsc --project .",
+    "build:prod": "tsc --build .",
     "image:local": "docker build -t node-api:latest .",
     "image:local:run": "docker run -d -p 3000:3000 node-api:latest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "_moduleAliases": {
-    "@controllers": "build/controllers",
-    "@middleware": "build/middleware",
-    "@models": "build/models",
-    "@router": "build/router",
-    "@validations": "build/validations",
-    "@test": "build/test"
+    "@controllers": "controllers",
+    "@middleware": "middleware",
+    "@models": "models",
+    "@router": "router",
+    "@validations": "validations",
+    "@test": "test"
   },
   "keywords": [],
   "author": "Hugo Morales <hugo@42devs.cl>",
@@ -25,7 +26,7 @@
   "nodemonConfig": {
     "ignore": ["build/*", "node_modules/*"],
     "events": {
-      "start": "yarn build"
+      "start": "yarn install && yarn build"
     }
   },
   "dependencies": {

@@ -5,9 +5,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY . .
 RUN yarn
-RUN yarn build
-RUN echo PORT
-
+RUN yarn build:prod
 
 #
 FROM node:15.3.0-alpine AS SERVER
