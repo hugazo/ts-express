@@ -12,9 +12,10 @@
       "@middleware/*": ["middleware/*"],
       "@models/*": ["models/*"],
       "@router/*": ["router/*"],
+      "@validations/*": ["validations/*"],
       "@tests/*": ["tests/*"],
     }
   },
   "moduleResolution": "node",
-  
+
 }
