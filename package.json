@@ -1,6 +1,5 @@
 {
   "name": "express-ts",
-  "version": "0.0.4",
   "description": "Simple Express Typescript Boilerplate",
   "main": "index.ts",
   "scripts": {

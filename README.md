@@ -6,10 +6,11 @@ This is a simple express api. This readme file should be growing with each itera
 
 - Express API with strong Type Denotation
 - Typescript Compliant
-- Added airbnb-eslint support for ts files
+- Eslint support for Typescript
 - Docker Image Compose
 - MongoDB database
 - Module Aliases
+- Hot reload and recompilation
 
 ## Setup
 
@@ -26,6 +27,14 @@ DB_NAME= # MongoDB Database Name
 ## Known Issues
 
 - Atom needs eslint plugin config to lint the ts files [More Info Here](https://github.com/AtomLinter/linter-eslint/issues/1293)
+
+## Development
+
+For development run:
+```bash
+yarn istall
+yarn dev
+```
 
 
 ## Roadmap
